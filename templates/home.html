@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2>Home</h2>
+                <p>Seja bem-vindo ao Trafficount!</p>
+                <form>
+                    <label>Envie um vídeo</label>
+                    <input type="file" accept="video/*" name="video" placeholder="enviar vídeo" required>
+                    <button type="submit"> Carregar</button>
+                </form>
+            </div>
+            <div class="col">
+                <img src="../static/img/traffic.jpeg" alt="Tráfego de veículos">
+            </div>
+        </div>  
+    </div>
+{% endblock %}
